@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tailwind CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Password UI</title>
+</head>
+
+<body>
+    <div class="background" id="background"></div>
+    <div class="bg-white rounded p-10 text-center shadow-md">
+        <h1 class="text-lg font-bold text-purple-700">Sign Up</h1>
+        <p class="text-sm text-gray700">Looks like you don't have an account.Let's create a new account for <span class="font-bold text-purple-500">hi@newaccount.dev</span></p>
+        <div class="my-4 text-left">
+            <label for="email" class="text-gray-900">E-mail :</label>
+            <input type="text" class="border block w-full p-2 rounded" id="email" required placeholder="Please Enter E-mail">
+
+        </div>
+        <div class="my-4 text-left">
+            <label for="password" id="passwordLabel" class="text-gray-900">Password :</label>
+            <input type="password" class="border block w-full p-2 rounded" id="password" required placeholder="Please Enter Password">
+        </div>
+        <button class="bg-purple-800 text-white py-2 mt-2 inline-block w-full rounded" type="submit">Continue</button>
+    </div>
+
+    <!--JavaScript-->
+    <script src="app.js"></script>
+</body>
+
+</html>
